@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Walking to 2030</title>
+    <style>
+    /* General section styling */
+.section {
+    padding: 30px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    margin: 20px auto;
+    max-width: 1200px;
+    box-shadow: 0 4px 8px #2e7d32(0, 0, 0, 0.1);
+}
+
+h1, h2, h3 {
+    color: #2e7d32;
+    font-family: 'Arial', sans-serif;
+    margin-bottom: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: left;
+}
+
+.container {
+    width: 100%;
+}
+
+/* Stories styling */
+.stories-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.story {
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.story:hover {
+    transform: scale(1.03);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.story img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.story-content {
+    padding: 15px;
+}
+
+.story-content h3 {
+    margin-top: 0;
+    font-size: 18px;
+}
+
+.story-content p {
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 10px 0;
+}
+
+.listen-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #5db45b;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.listen-btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Projects styling */
+.project {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 6px rgba(65, 225, 60, 0.607);
+    margin-bottom: 20px;
+}
+
+.project h3 {
+    margin-top: 0;
+}
+
+/* Gallery styling */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.gallery-item {
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    width: calc(33.333% - 15px); /* Responsive width */
+    margin-bottom: 15px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+}
+
+.gallery-item:hover {
+    transform: scale(1.03);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.comment-section {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(55, 156, 83, 0.6);
+    color: #fff;
+    padding: 10px;
+    box-sizing: border-box;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.gallery-item:hover .comment-section {
+    opacity: 1;
+}
+
+/* Upload form styling */
+.upload-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.upload-form input[type="file"] {
+    margin-bottom: 15px;
+}
+
+.upload-form input[type="submit"] {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 6px;
+    background-color: #5caf62;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.upload-form input[type="submit"]:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+footer a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Walking to 2030</h1>
+    </header>
+    <div class="container">
+        <nav class="nav">
+            <img src="ruta/de/tu/logo.png" alt="Mi logo">
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Juegos</a></li>
+                <li><a href="#">Sobre Nosotros</a></li>
+                <li><a href="#">Donaciones</a></li>
+            </ul>
+        </nav>
+        <div class="main-content">
+            <section id="textobarra">
+                <h2>
+                    <button id="toggle-nav">
+                        <img src="https://cdn-icons-png.flaticon.com/512/58/58497.png" alt="Abrir/Cerrar Navegación" width="30">
+                        Menú
+                    </button>
+                </h2>
+            </section>
+            <div class="section" id="historias-de-ninos">
+                <h1>ODS en acción</h1>
+                <div class="section stories">
+                    <h2>Historias de Niños</h2>
+                    <div class="container">
+                        <!-- Sección Historias de Niños -->
+                        <div class="stories-list">
+                            <!-- Historia 1 -->
+                            <div class="story">
+                                <img src="https://s3.ppllstatics.com/elcorreo/www/multimedia/202103/12/media/cortadas/reciclar-ninos-kCbE-R2qV5cXgkqtzXJr9KFMjZrM-1248x770@El%20Correo.jpeg" alt="La campaña de reciclaje de Ana">
+                                <div class="story-content">
+                                    <h3>La campaña de reciclaje de Ana</h3>
+                                    <p>Ana, una estudiante de 10 años, organizó una campaña de reciclaje en su escuela para reducir la cantidad de desechos. Con la ayuda de sus compañeros, logró crear un sistema de reciclaje que se sigue utilizando hoy en día.</p>
+                                    <a href="https://www.un.org/sustainabledevelopment/es/videos/" class="listen-btn" target="_blank">Ver ahora</a>
+                                </div>
+                            </div>
+                            <!-- Historia 2 -->
+                            <div class="story">
+                                <img src="https://haimaneltroudi.com/wp-content/uploads/2019/12/haiman-el-troudi-educacion-ambiental-ninos-y-ninas-2.png" alt="El jardín ecológico de Pedro">
+                                <div class="story-content">
+                                    <h3>El jardín ecológico de Pedro</h3>
+                                    <p>Pedro, un joven de 12 años, estableció un jardín ecológico en el patio de su escuela para promover la biodiversidad y enseñar a sus compañeros sobre la importancia de las plantas en el medio ambiente.</p>
+                                    <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fhaimaneltroudi.com%2Ffomentar-la-educacion-ambiental-en-ninos-y-ninas-es-preservar-el-ambiente-i%2F&psig=AOvVaw3ATHxzPX_76weAgtgKccA5&ust=1724710612993000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCOiv3e2VkYgDFQAAAAAdAAAAABAZ" class="listen-btn" target="_blank">Ver ahora</a>
+                                </div>
+                            </div>
+                            <!-- Historia 3 -->
+                            <div class="story">
+                                <img src="https://static.abc.es/media/familia/2018/01/15/ropa-fundacion-madrina-kWcH--1240x698@abc.jpg" alt="La colección de ropa de María">
+                                <div class="story-content">
+                                    <h3>La colección de ropa de María</h3>
+                                    <p>María, una niña de 9 años, organizó una recolección de ropa usada en su comunidad para ayudar a las familias necesitadas. Su iniciativa ha proporcionado ropa a muchas personas en situación de vulnerabilidad.</p>
+                                    <a href="https://www.un.org/sustainabledevelopment/es/videos/" class="listen-btn" target="_blank">Ver ahora</a>
+                                </div>
+                            </div>
+                            <!-- Historia 4 -->
+                            <div class="story">
+                                <img src="https://imagenes.elpais.com/resizer/v2/CDI3QLFYOFCFRPHYLWIDDHTBOI.jpg?auth=124b29380381cc9da27adf6f741efa58a61a46f0db97b6301270b60ff727eb69&width=414" alt="La campaña de ahorro de agua de Juan">
+                                <div class="story-content">
+                                    <h3>La campaña de ahorro de agua de Juan</h3>
+                                    <p>Juan, un estudiante de 11 años, lanzó una campaña en su escuela para concienciar sobre el ahorro de agua. Creó carteles informativos y organizó talleres para educar a sus compañeros sobre cómo conservar este recurso vital.</p>
+                                    <a href="https://www.un.org/sustainabledevelopment/es/videos/" class="listen-btn" target="_blank">Ver ahora</a>
+                                </div>
+                            </div>
+                            <!-- Historia 5 -->
+                            <div class="story">
+                                <img src="https://i0.wp.com/sonplayas.com/wp-content/uploads/2020/07/Limpian-playas-de-Mazatlan.jpg?ssl=1" alt="La limpieza de playas de Lucía">
+                                <div class="story-content">
+                                    <h3>La limpieza de playas de Lucía</h3>
+                                    <p>Lucía, de 13 años, reunió a sus amigos para llevar a cabo una limpieza de playas en su localidad. Su esfuerzo ayudó a mejorar el estado de la playa y sensibilizó a la comunidad sobre la importancia de mantener nuestros espacios naturales limpios.</p>
+                                    <a href="https://www.un.org/sustainabledevelopment/es/videos/" class="listen-btn" target="_blank">Ver ahora</a>
+                                </div>
+                            </div>
+                            <!-- Historia 6 -->
+                            <div class="story">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5Jap8W3nmqjWJSkKMrIsuyJ68prwrkGEPaQ&s" alt="La biblioteca móvil de Carlos">
+                                <div class="story-content">
+                                    <h3>La biblioteca móvil de Carlos</h3>
+                                    <p>Carlos, un joven de 12 años, creó una biblioteca móvil en su vecindario para fomentar la lectura entre los niños de su comunidad. Con libros donados, viaja por el área compartiendo historias con otros niños.</p>
+                                    <a href="https://www.un.org/sustainabledevelopment/es/videos/" class="listen-btn" target="_blank">Ver ahora</a>
+                                </div>
+                            </div>
+                            <!-- Historia 7 -->
+                            <div class="story">
+                                <img src="https://espaciopachamama.com/wp-content/uploads/2022/04/huerto-urbano-yura-768x515.jpg" alt="El huerto urbano de Laura">
+                                <div class="story-content">
+                                    <h3>El huerto urbano de Laura</h3>
+                                    <p>Laura, una niña de 10 años, estableció un huerto urbano en su terraza para promover la agricultura sostenible y enseñar a su familia sobre la producción de alimentos saludables.</p>
+                                    <a href="https://www.un.org/sustainabledevelopment/es/videos/" class="listen-btn" target="_blank">Ver ahora</a>
+                                </div>
+                            </div>
+                            <!-- Historia 8 -->
+                            <div class="story">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0_R-2iDQfUZtQ3xUWSE0Z2vacRx9mKAHLJQ&s" alt="La iniciativa de energía solar de Roberto">
+                                <div class="story-content">
+                                    <h3>La iniciativa de energía solar de Roberto</h3>
+                                    <p>Roberto, de 11 años, implementó paneles solares en su escuela para reducir el consumo de energía eléctrica. Su proyecto no solo disminuyó los costos, sino que también educó a sus compañeros sobre energías renovables.</p>
+                                    <a href="https://www.un.org/sustainabledevelopment/es/videos/" class="listen-btn" target="_blank">Ver ahora</a>
+                                </div>
+                            </div>
+                            <!-- Historia 9 -->
+                            <div class="story">
+                                <img src="https://www.unicef.org/mexico/sites/unicef.org.mexico/files/styles/hero_tablet/public/201810%20Balam%20ha1%20%28116%29.jpg.webp?itok=a0hkl9KK" alt="El programa de alimentación saludable de Isabel">
+                                <div class="story-content">
+                                    <h3>El programa de alimentación saludable de Isabel</h3>
+                                    <p>Isabel, una joven de 14 años, inició un programa en su escuela para promover la alimentación saludable, creando menús equilibrados y educando a sus compañeros sobre nutrición.</p>
+                                    <a href="https://www.un.org/sustainabledevelopment/es/videos/" class="listen-btn" target="_blank">Ver ahora</a>
+                                </div>
+                            </div>
+                            <!-- Historia 10 -->
+                            <div class="story">
+                                <img src="https://www.letrabrava.cl/wp-content/uploads/2019/07/1-1.jpg" alt="La iniciativa de reciclaje de papel de Javier">
+                                <div class="story-content">
+                                    <h3>La iniciativa de reciclaje de papel de Javier</h3>
+                                    <p>Javier, de 12 años, comenzó un programa de reciclaje de papel en su escuela para reducir la cantidad de residuos. Su esfuerzo ha resultado en una significativa disminución en el uso de papel y ha fomentado la conciencia ambiental entre sus compañeros.</p>
+                                    <a href="https://www.un.org/sustainabledevelopment/es/videos/" class="listen-btn" target="_blank">Ver ahora</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section" id="proyectos-escolares">
+                <center><h2>Proyectos escolares</h2></center>
+                <div class="project">
+                    <h3>Crear una compostera</h3>
+                    <p>Una idea sencilla para que los niños aprendan sobre el reciclaje de residuos orgánicos es crear una compostera en el aula o en casa. Este proyecto les enseñará cómo convertir restos de comida y otros materiales orgánicos en abono para plantas. Aquí te damos una guía paso a paso para ponerlo en práctica:</p>
+                    <a href="https://www.crehana.com/blog/trabajo-remoto/como-hacer-una-composta-casera/" class="listen-btn" target="_blank" download>Ver guía paso a paso</a>
+                </div>
+                <div class="project">
+                    <h3>Recolección de ropa usada</h3>
+                    <p>Organiza una campaña en tu escuela para recolectar ropa usada y donarla a quienes la necesitan.</p>
+                    <a href="https://recidar.pe/campana-recicla-tu-closet/" class="listen-btn" target="_blank" download>Ver formulario</a>
+                </div>
+            </div>
+            
+            <div class="section" id="galeria-de-fotos">
+                <center><h2>Galería de fotos</h2></center>
+                <div class="gallery">
+                    <div class="gallery-item">
+                        </div>
+                    </div>
+                    <iframe src="eso.html" width="600" height="500" style="border:none;"></iframe>
+                
+                    <!-- Agrega más fotos aquí -->
+                </div>
+                <form action="/subir_foto" method="post" enctype="multipart/form-data" class="upload-form">
+                    <input type="file" name="foto" accept="image/*">
+                    <input type="submit" value="Subir Foto">
+                </form>
+               
+                        <p>&copy; 2024 EnviroXP. Todos los derechos reservados.</p>
+                        <p>Contáctanos: <a href="mailto:EnviroXP@gmail.com">EnviroXP@gmail.com</a> | Teléfono: 6733-9089</p>
+                </form>
+            </div>
+            
+            
