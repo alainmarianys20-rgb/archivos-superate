@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de Adivinanza</title>
+  <style>
+     body {
+     font-family: Arial, sans-serif;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 100vh;
+     margin: 0;
+     background-color: #aea8dd;
+     }
+      .juego-adivinanza {
+     background-color: #1792bf;
+     padding: 20px;
+     border-radius: 10px;
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      width: 300px;
+     text-align: center;
+     }
+     .juego-adivinanza input, .juego-adivinanza button {
+      width: 60px;
+      height: 40px;
+      margin: 5px;
+      font-size: 18px;
+      }
+     .juego-adivinanza input[type="number"] {
+      width: 100px;
+      text-align: center;
+      padding: 10px;
+      margin-bottom: 10px;
+      font-size: 24px;
+      }
+   </style>
+</head>
+  <body>
+ <div class="juego-adivinanza">
+ <h2>Juego de Adivinanza</h2>
+ <p>Adivina un número entre 1 y 100</p>
+ <input type="number" id="numero-adivinado" min="1" max="100" placeholder="Tu número">
+ <button onclick="adivinar()">Adivinar</button>
+ <p id="mensaje"></p>
+ <button onclick="reiniciar()">Reiniciar</button>
+ </div>
+ <script src="script.js"></script>
+  </body>
+</html>
+
