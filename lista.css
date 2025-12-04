@@ -1,0 +1,43 @@
+body {
+ font-family: Arial, sans-serif;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ height: 100vh;
+ margin: 0;
+ background-color: #c0f8c0;
+ }
+ .lista-tareas {
+ background-color: #b2a1de;
+ padding: 20px;
+ border-radius: 10px;
+ box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+ width: 300px;
+ text-align: center;
+ }
+ .lista-tareas input, .lista-tareas button {
+    width: 200px;
+    height: 40px;
+    margin: 5px;
+    font-size: 18px;
+    }
+    .tareas {
+    list-style-type: none;
+    padding: 0;
+    }
+    .tareas li {
+    background-color: #eaa5dc;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    }
+    .tareas button {
+    background-color: rgb(239, 157, 157);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    }
+   
